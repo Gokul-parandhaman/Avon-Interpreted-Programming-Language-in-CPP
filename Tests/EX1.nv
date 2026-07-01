@@ -1,0 +1,9 @@
+print("=== TEST 1: Basic Print ===")
+print(45)
+print(3.14)
+print("Hello, Nova!");
+print(true);
+print(false)
+print(null)
+print("Numbers:", 10,20,30,sep=" 67 ")
+print("Numbers:",10,20,30,end="lolol")

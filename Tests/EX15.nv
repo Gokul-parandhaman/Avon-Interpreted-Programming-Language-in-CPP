@@ -1,0 +1,6 @@
+print("\n=== TEST 15: LINKEDLIST ===")
+linkedlist ll = {10, 20, 30}
+print(ll_pop_front(ll))
+print(ll_pop_front(ll))
+print(ll_pop_front(ll))
+print(ll_empty(ll))

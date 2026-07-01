@@ -1,0 +1,133 @@
+print("\n=== TEST 24: TRY/CATCH/THROW ===")
+
+# ── Test 1: Basic Throw and Catch ──────────────────────────────────────────────
+print("\n--- Test 1: Basic Throw/Catch ---")
+try {
+    print("Inside try block")
+    throw("This is a test error!")
+    print("This should not print")
+} catch (err) {
+    print("Caught error:", err)
+}
+print("After try/catch")
+
+# ── Test 2: No Error (Should skip catch) ──────────────────────────────────────
+print("\n--- Test 2: No Error ---")
+try {
+    print("No error here")
+    var x = 42
+    print("x =", x)
+} catch (err) {
+    print("This should not print")
+}
+print("After try/catch with no error")
+
+# ── Test 3: Error with Different Messages ──────────────────────────────────────
+print("\n--- Test 3: Different Error Messages ---")
+try {
+    print("Throwing a numeric error")
+    throw(100)
+} catch (err) {
+    print("Caught number:", err)
+}
+
+try {
+    print("Throwing a string error")
+    throw("String error message")
+} catch (err) {
+    print("Caught string:", err)
+}
+
+try {
+    print("Throwing a boolean error")
+    throw(true)
+} catch (err) {
+    print("Caught boolean:", err)
+}
+
+# ── Test 4: Practical Example - Division by Zero Check ──────────────────────
+print("\n--- Test 4: Division with Error Checking ---")
+fun safe_divide(a, b) {
+    if (b == 0) {
+        throw("Cannot divide by zero!")
+    }
+    return a / b
+}
+
+try {
+    var result = safe_divide(10, 2)
+    print("10 / 2 =", result)
+} catch (err) {
+    print("Error:", err)
+}
+
+try {
+    var result = safe_divide(10, 0)
+    print("10 / 0 =", result)
+} catch (err) {
+    print("Error:", err)
+}
+
+# ── Test 5: Nested Try/Catch ──────────────────────────────────────────────────
+print("\n--- Test 5: Nested Try/Catch ---")
+try {
+    print("Outer try block")
+    try {
+        print("  Inner try block")
+        throw("Inner error")
+        print("  This should not print")
+    } catch (err) {
+        print("  Inner caught:", err)
+    }
+    print("Back to outer try")
+} catch (err) {
+    print("Outer caught:", err)
+}
+print("After nested try/catch")
+
+# ── Test 6: Error in Function with Try/Catch ──────────────────────────────────
+fun process_data(data) {
+    if (data == null) {
+        throw("Data is null!")
+    }
+    return data
+}
+
+try {
+    var result = process_data("Hello")
+    print("Processing: ", result)  # ← Use multiple arguments instead of concatenation
+} catch (err) {
+    print("Error:", err)
+}
+
+# ── Test 7: Multiple Throws in Same Try ──────────────────────────────────────
+print("\n--- Test 7: Multiple Throws ---")
+var counter = 0
+
+fun check_value(val) {
+    if (val < 0) {
+        throw("Negative value!")
+    }
+    if (val > 100) {
+        throw("Value too large!")
+    }
+    return val * 2
+}
+
+try {
+    print("Testing 50...")
+    var result = check_value(50)
+    print("Result:", result)
+    
+    print("Testing -5...")
+    result = check_value(-5)
+    print("Result:", result)  # Should not reach here
+    
+    print("Testing 150...")
+    result = check_value(150)
+    print("Result:", result)  # Should not reach here
+} catch (err) {
+    print("Caught:", err)
+}
+
+print("\n=== TRY/CATCH TESTS COMPLETE ===")

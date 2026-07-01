@@ -1,0 +1,7 @@
+print("\n=== TEST 17: STRING ===")
+string s = "Hello, World!"
+print(s)
+print(string_size(s))
+print(string_get(s, 0))
+string_set(s, 0, "J")
+print(s)

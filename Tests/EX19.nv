@@ -1,0 +1,6 @@
+print("\n=== TEST 19: IF/ELSE ===")
+if 10 > 5 { print("Greater") } else { print("Smaller") }
+if 10 > 20 { print("Greater") } else { print("Smaller") }
+number x = 15
+if x > 20 { print("A") } else if x > 10 { print("B") } else { print("C") }
+if x > 20 { print("A") } else if x > 30 { print("B") } else { print("C") }

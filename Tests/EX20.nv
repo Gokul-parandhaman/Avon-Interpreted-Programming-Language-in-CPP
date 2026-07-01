@@ -1,0 +1,12 @@
+print("\n=== TEST 20: NESTED IF ===")
+var x = 67
+number y = 2
+if x > 5 {
+    if y > 15 {
+        print("Both conditions true")
+    } else {
+        print("Inner false")
+    }
+} else {
+    print("Outer false")
+}

@@ -1,0 +1,11 @@
+print("\n=== TEST 9: MAP ===")
+map m = {}
+map_set(m, "name", "Alice")
+map_set(m, "age", 30)
+map_set(m, "active", true)
+print(map_get(m, "name"))
+print(map_get(m, "age"))
+print(map_get(m, "active"))
+print(map_has(m, "name"))
+print(map_has(m, "city"))
+print(map_size(m))

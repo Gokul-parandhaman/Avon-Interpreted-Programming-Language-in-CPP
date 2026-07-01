@@ -1,0 +1,7 @@
+print("\n=== TEST 14: HEAP ===")
+heap h = {5, 3, 8, 1}
+print(heap_pop(h))
+print(heap_pop(h))
+print(heap_pop(h))
+print(heap_pop(h))
+print(heap_empty(h))

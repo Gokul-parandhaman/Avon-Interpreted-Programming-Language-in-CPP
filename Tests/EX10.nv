@@ -1,0 +1,6 @@
+print("\n=== TEST 10: MAP KEYS ===")
+map m = {}
+map_set(m, "a", 1)
+map_set(m, "b", 2)
+map_set(m, "c", 3)
+print(map_keys(m))

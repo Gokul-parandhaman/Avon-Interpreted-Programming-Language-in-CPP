@@ -1,0 +1,7 @@
+print("\n=== TEST 12: STACK ===")
+stack s = {1, 2, 3, 4}
+print(stack_pop(s))
+print(stack_pop(s))
+print(stack_pop(s))
+print(stack_pop(s))
+print(stack_empty(s))

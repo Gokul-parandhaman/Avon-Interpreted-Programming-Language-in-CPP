@@ -1,0 +1,7 @@
+print("\n=== TEST 4: Logical Operators ===")
+print(true and true)
+print(true and false)
+print(true or false)
+print(false or false)
+print(not true)
+print(not false)

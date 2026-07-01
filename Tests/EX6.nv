@@ -1,0 +1,11 @@
+print("\n=== TEST 6: BUNCH ===")
+bunch b = {1, 2, 3, 4}
+print(b)
+bunch_push(b, 5)
+print(b)
+print(bunch_pop(b))
+print(b)
+print(bunch_size(b))
+print(bunch_get(b, 0))
+print(bunch_empty(b))
+print(b[0])

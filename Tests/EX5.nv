@@ -1,0 +1,19 @@
+print("\n=== TEST 5: Variables ===")
+number x = 10
+string name = "Nova"
+bool flag = true
+null value = null
+
+print("x =", x)
+print("name =", name)
+print("flag =", flag)
+print("value =", value)
+
+var y = 20
+print("x + y =", x + y)
+
+var z = x * y
+print("x * y =", z)
+
+x = 100
+print("x after reassignment =", x)

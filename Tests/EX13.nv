@@ -1,0 +1,6 @@
+print("\n=== TEST 13: QUEUE ===")
+queue q = {10, 20, 30}
+print(queue_dequeue(q))
+print(queue_dequeue(q))
+print(queue_dequeue(q))
+print(queue_empty(q))

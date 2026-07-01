@@ -1,0 +1,11 @@
+print("\n=== TEST 11: MAP LOOP ===")
+map scores = {}
+map_set(scores, "Alice", 95)
+map_set(scores, "Bob", 87)
+map_set(scores, "Charlie", 92)
+bunch keys = map_keys(scores)
+loop(i=0; i < bunch_size(keys); i=i+1) {
+    string name = keys[i]
+    number score = map_get(scores, name)
+    print(name, ":", score)
+}

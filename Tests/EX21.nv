@@ -1,0 +1,6 @@
+print("\n=== TEST 21: LOOPS ===")
+loop(i=0; i<5; i=i+1) { print(i) }
+number total = 0
+loop(i=0; i<10; i=i+1) { total = total + i }
+print(total)
+loop(i=5; i>0; i=i-1) { print(i) }
