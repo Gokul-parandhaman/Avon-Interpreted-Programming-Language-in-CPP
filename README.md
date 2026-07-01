@@ -1,4 +1,4 @@
-# 🚀 Nova Programming Language
+# 🚀 Avon Programming Language
 
 <div align="center">
 
